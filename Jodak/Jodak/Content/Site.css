@@ -1,24 +1,90 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
+﻿@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+/* Color Scheme */
+/* Buttons START */
+.btn, .btn-white, .btn-white:hover,
+.btn-white:active, .btn-magenta, .btn-magenta:hover,
+.btn-magenta:active, .btn-teal, .btn-blue, .btn-green, .btn-mint, .btn-black {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border-bottom: 4px solid #ccc;
+  border-radius: 4px;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase; }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+.btn-white {
+  border-color: #B9BFC3;
+  background-color: #EAEEEF; }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
+.btn-white:hover,
+.btn-white:active {
+  border-color: #9ea6ab;
+  background-color: #cdd7d9; }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
+.btn-magenta {
+  border-color: #8A48A2;
+  background-color: #975AAC;
+  color: #EAEEEF; }
+
+.btn-magenta:hover,
+.btn-magenta:active {
+  border-color: #6c387f;
+  background-color: #7b478c;
+  color: #EAEEEF; }
+
+.btn-teal {
+  border-color: #3B606E;
+  background-color: #406D7B;
+  color: #EAEEEF; }
+
+.btn-blue {
+  border-color: #347CAF;
+  background-color: #3D94D1;
+  color: #EAEEEF; }
+
+.btn-green {
+  border-color: #36AA69;
+  background-color: #3EC87A; }
+
+.btn-mint {
+  border-color: #2A9C83;
+  background-color: #30B89A; }
+
+.btn-black {
+  border-color: #2A2A2A;
+  background-color: #2E2E2E;
+  color: #EAEEEF; }
+
+/* Buttons END */
+strong, h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, sans-serif; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: table;
+  width: 100%; }
+
+.page-row {
+  display: table-row;
+  height: 1px; }
+
+.page-row-expanded {
+  height: 100%; }
+

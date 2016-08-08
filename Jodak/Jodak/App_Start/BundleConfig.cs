@@ -24,8 +24,10 @@ namespace Jodak
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/grid.css",
+                      "~/Content/site.css")); // site.css should always be on the bottom to ensure it overrides any other styles
+
+
         }
     }
 }

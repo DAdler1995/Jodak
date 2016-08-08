@@ -1,0 +1,144 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+$TitleFont: Oswald, sans-serif;
+$Font: Quattrocento, serif;
+
+/* Color Scheme */
+$Magenta-Light: #975AAC;
+$Magenta-Dark:  #8A48A2;
+
+$Teal-Light:    #406D7B;
+$Teal-Dark:     #3B606E;
+
+$Blue-Light:    #3D94D1;
+$Blue-Dark:     #347CAF;
+
+$Green-Light:   #3EC87A;
+$Green-Dark:    #36AA69;
+
+$Mint-Light:    #30B89A;
+$Mint-Dark:     #2A9C83;
+
+$White-Light:   #EAEEEF;
+$White-Dark:    #B9BFC3;
+
+$Black-Light:   #2E2E2E;
+$Black-Dark:    #2A2A2A;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* Buttons START */
+.btn {    
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-bottom: 4px solid #ccc;
+    border-radius: 4px;
+    font-family: $TitleFont;
+    text-transform: uppercase;
+}
+
+@mixin btn-hover($BorderColor, $BackgroundColor) {
+    @extend .btn;
+    border-color: darken($BorderColor, 10%);
+    background-color: darken($BackgroundColor, 10%);
+}
+
+.btn-white {
+    @extend .btn;
+    border-color: $White-Dark;
+    background-color: $White-Light;
+}
+.btn-white:hover,
+.btn-white:active {
+    @include btn-hover($White-Dark, $White-Light);
+}
+
+.btn-magenta {
+    @extend .btn;
+    border-color: $Magenta-Dark;
+    background-color: $Magenta-Light;
+    color: $White-Light;
+}
+.btn-magenta:hover,
+.btn-magenta:active {
+    @include btn-hover($Magenta-Dark, $Magenta-Light);
+    color: $White-Light;
+}
+
+
+.btn-teal {
+    @extend .btn;
+    border-color: $Teal-Dark;
+    background-color: $Teal-Light;
+    color: $White-Light;
+}
+
+.btn-blue {
+    @extend .btn;
+    border-color: $Blue-Dark;
+    background-color: $Blue-Light;
+    color: $White-Light;
+}
+
+.btn-green {
+    @extend .btn;
+    border-color: $Green-Dark;
+    background-color: $Green-Light;
+}
+
+.btn-mint {
+    @extend .btn;
+    border-color: $Mint-Dark;
+    background-color: $Mint-Light;
+}
+
+.btn-black {
+    @extend .btn;
+    border-color: $Black-Dark;
+    background-color: $Black-Light;
+    color: $White-Light;
+}
+/* Buttons END */
+
+strong, h1, h2, h3, h4, h5, h6 {
+    font-family: $TitleFont;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: table;
+    width: 100%;
+}
+
+.page-row {
+    display: table-row;
+    height: 1px;
+}
+
+.page-row-expanded {
+    height: 100%;
+}
